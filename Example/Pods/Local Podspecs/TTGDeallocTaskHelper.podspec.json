@@ -1,0 +1,29 @@
+{
+  "name": "TTGDeallocTaskHelper",
+  "version": "0.1.0",
+  "summary": "NSObject Category to add callback tasks when object dealloc.",
+  "description": "NSObject Category to add callback tasks when object dealloc.",
+  "homepage": "https://github.com/zekunyan/TTGDeallocTaskHelper",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zekunyan": "zekunyan@163.com"
+  },
+  "source": {
+    "git": "https://github.com/zekunyan/TTGDeallocTaskHelper.git",
+    "tag": "0.1.0"
+  },
+  "social_media_url": "https://twitter.com/zorro_tutuge",
+  "platforms": {
+    "ios": "6.0"
+  },
+  "requires_arc": true,
+  "source_files": "TTGDeallocTaskHelper/Classes/**/*",
+  "public_header_files": "Pod/Classes/**/*.h",
+  "frameworks": [
+    "UIKit",
+    "CoreFoundation"
+  ]
+}

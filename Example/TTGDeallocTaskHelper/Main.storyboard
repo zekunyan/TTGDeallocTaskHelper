@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,14 +15,58 @@
                         <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TTGDeallocTaskHelper" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqb-wQ-u9D">
+                                <rect key="frame" x="16" y="80" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="NqQ-WO-JSH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4BV-4o-oaA">
+                                <rect key="frame" x="16" y="148" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="3sE-hf-hiK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Run Demo"/>
+                                <connections>
+                                    <action selector="runDemo:" destination="whP-gf-Uak" eventType="touchUpInside" id="JHl-1Y-trV"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5W-Gg-G2H">
+                                <rect key="frame" x="12" y="216" width="351" height="443"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="S5W-Gg-G2H" secondAttribute="bottom" constant="8" id="6Zm-CG-aLN"/>
+                            <constraint firstItem="4BV-4o-oaA" firstAttribute="top" secondItem="fqb-wQ-u9D" secondAttribute="bottom" constant="8" id="HBq-69-qxx"/>
+                            <constraint firstItem="fqb-wQ-u9D" firstAttribute="trailing" secondItem="TpU-gO-2f1" secondAttribute="trailingMargin" id="Ix6-qX-L6K"/>
+                            <constraint firstItem="4BV-4o-oaA" firstAttribute="trailing" secondItem="TpU-gO-2f1" secondAttribute="trailingMargin" id="Otx-o4-ucc"/>
+                            <constraint firstItem="fqb-wQ-u9D" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" id="PlW-hd-d2R"/>
+                            <constraint firstItem="S5W-Gg-G2H" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" constant="-4" id="Rpa-uP-CbA"/>
+                            <constraint firstItem="4BV-4o-oaA" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" id="UXi-gh-orS"/>
+                            <constraint firstItem="S5W-Gg-G2H" firstAttribute="top" secondItem="4BV-4o-oaA" secondAttribute="bottom" constant="8" id="mcN-Bs-gsE"/>
+                            <constraint firstItem="fqb-wQ-u9D" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="60" id="xMt-7H-19T"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="S5W-Gg-G2H" secondAttribute="trailing" constant="-4" id="yXy-LQ-3Kr"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="infoTextView" destination="S5W-Gg-G2H" id="D3A-mp-zJc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="304.5" y="432.5"/>
         </scene>
     </scenes>
 </document>

@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		192BD53CB29287BC2400C49FB7A0AA04 /* Pods-TTGDeallocTaskHelper_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC142C7BB710ED8184F764CF367EAAE /* Pods-TTGDeallocTaskHelper_Tests-dummy.m */; };
+		22DE51A04D31C3B1BF5DA909C6494BC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBCA801DED542D9C48BB9496E41CB2A7 /* Foundation.framework */; };
+		45656F47BA036C1D99431B77BE3A5E17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBCA801DED542D9C48BB9496E41CB2A7 /* Foundation.framework */; };
+		72B7F0EBCD3336F303C25F64307B42C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ED1411C548899C28A948508769F77B7 /* UIKit.framework */; };
+		809ED1937597B26B65A4606A959D7A48 /* NSObject+TTGDeallocTaskHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = D819A7E121981E12BEB832863B15BBA3 /* NSObject+TTGDeallocTaskHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92A5DEB0C79363E8A8676B64A896B16F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09380E532BB1971AAE638734E57574F9 /* CoreFoundation.framework */; };
+		9470BA21C9BBA92F6A5ACB4CCBD3EB1F /* NSObject+TTGDeallocTaskHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FFEE5E12E73E3A201672DDBC09B410 /* NSObject+TTGDeallocTaskHelper.m */; };
+		B6E5AAE1BA7D4DE506D8242E8846EAD5 /* Pods-TTGDeallocTaskHelper_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A2E3273886EC8CEAACED032E0EA1A1 /* Pods-TTGDeallocTaskHelper_Example-dummy.m */; };
+		F333BF4D2737A564D26FA1984E09CF24 /* TTGDeallocTaskHelper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF41DD27C24C6082A6F64354211C82FF /* TTGDeallocTaskHelper-dummy.m */; };
+		F93734DE73C6A0617FC031670A2453EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBCA801DED542D9C48BB9496E41CB2A7 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		369B5920AFA62F5E7F0147EE5B2CF294 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A9332C0549E2BDB2C0873496AD3D14D;
+			remoteInfo = TTGDeallocTaskHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08BF87DF2EB2B6B176EE03E4AA969E2F /* Pods-TTGDeallocTaskHelper_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TTGDeallocTaskHelper_Example-frameworks.sh"; sourceTree = "<group>"; };
+		0919C3FBC86536081116E79B90E80A05 /* Pods-TTGDeallocTaskHelper_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TTGDeallocTaskHelper_Tests-resources.sh"; sourceTree = "<group>"; };
+		09380E532BB1971AAE638734E57574F9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		1ED1411C548899C28A948508769F77B7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		245BAFBF5F6BD4E4E4C30B84CEBE9583 /* Pods-TTGDeallocTaskHelper_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TTGDeallocTaskHelper_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		27ECA4842E45932592043F26CBE3F740 /* libTTGDeallocTaskHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTTGDeallocTaskHelper.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BC142C7BB710ED8184F764CF367EAAE /* Pods-TTGDeallocTaskHelper_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TTGDeallocTaskHelper_Tests-dummy.m"; sourceTree = "<group>"; };
+		425DB10573A4745402397AFAA06DEB72 /* Pods-TTGDeallocTaskHelper_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TTGDeallocTaskHelper_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		44D3613ADCCA1638CC790494EAECCA4A /* Pods-TTGDeallocTaskHelper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TTGDeallocTaskHelper_Example.release.xcconfig"; sourceTree = "<group>"; };
+		55803EB38F4BD5B0B751BB0E7CA901B1 /* Pods-TTGDeallocTaskHelper_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TTGDeallocTaskHelper_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		58A2E3273886EC8CEAACED032E0EA1A1 /* Pods-TTGDeallocTaskHelper_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TTGDeallocTaskHelper_Example-dummy.m"; sourceTree = "<group>"; };
+		6EE5E58303ECBE33509C65A7FE625A5F /* Pods-TTGDeallocTaskHelper_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TTGDeallocTaskHelper_Example-resources.sh"; sourceTree = "<group>"; };
+		72FCE074F3D0E12740BE0C702DBA50B4 /* libPods-TTGDeallocTaskHelper_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TTGDeallocTaskHelper_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74FFEE5E12E73E3A201672DDBC09B410 /* NSObject+TTGDeallocTaskHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TTGDeallocTaskHelper.m"; sourceTree = "<group>"; };
+		77CEE58E4E13C3E1C7C5B12EAD2C377A /* libPods-TTGDeallocTaskHelper_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TTGDeallocTaskHelper_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8499E0251852CDDF552B380481CDB347 /* Pods-TTGDeallocTaskHelper_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TTGDeallocTaskHelper_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		85F80D6DE75AA98894703AD9A40211EB /* TTGDeallocTaskHelper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTGDeallocTaskHelper-prefix.pch"; sourceTree = "<group>"; };
+		8B24BB4546A30C439032A595C62C01DE /* Pods-TTGDeallocTaskHelper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TTGDeallocTaskHelper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CDE12029D9EB6AF1DBE0C4ECB3DCC98F /* Pods-TTGDeallocTaskHelper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TTGDeallocTaskHelper_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		CE51CC2232011AE9FC4E7EAAA9366B2C /* Pods-TTGDeallocTaskHelper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TTGDeallocTaskHelper_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D819A7E121981E12BEB832863B15BBA3 /* NSObject+TTGDeallocTaskHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+TTGDeallocTaskHelper.h"; sourceTree = "<group>"; };
+		DE6F017DD07EE45E5E59AD92071D4FA8 /* TTGDeallocTaskHelper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTGDeallocTaskHelper.xcconfig; sourceTree = "<group>"; };
+		EBCA801DED542D9C48BB9496E41CB2A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EF41DD27C24C6082A6F64354211C82FF /* TTGDeallocTaskHelper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TTGDeallocTaskHelper-dummy.m"; sourceTree = "<group>"; };
+		F866F5609CCB43E106DA4C48C2DA5813 /* Pods-TTGDeallocTaskHelper_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TTGDeallocTaskHelper_Tests-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C0FDE212FA9A9ED005547EEF46E5D54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92A5DEB0C79363E8A8676B64A896B16F /* CoreFoundation.framework in Frameworks */,
+				22DE51A04D31C3B1BF5DA909C6494BC1 /* Foundation.framework in Frameworks */,
+				72B7F0EBCD3336F303C25F64307B42C1 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0C04616D606B416EF7F78EF6612F529 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45656F47BA036C1D99431B77BE3A5E17 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE87E255C248C92D4F6D23EC464BF1A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F93734DE73C6A0617FC031670A2453EA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10A3661F2759B39333E4D638B565041C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				448413D4E19D8D4EBD84262332AE0C48 /* Pods-TTGDeallocTaskHelper_Example */,
+				825DD70C89A91C5F7BAD40248DFB55B2 /* Pods-TTGDeallocTaskHelper_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1E7B662015F43EBB0D0519AAC5A7C26 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		16F57D9DEAB193E7FF5FBB7D0A60D963 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE6F017DD07EE45E5E59AD92071D4FA8 /* TTGDeallocTaskHelper.xcconfig */,
+				EF41DD27C24C6082A6F64354211C82FF /* TTGDeallocTaskHelper-dummy.m */,
+				85F80D6DE75AA98894703AD9A40211EB /* TTGDeallocTaskHelper-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TTGDeallocTaskHelper";
+			sourceTree = "<group>";
+		};
+		18241B33965EE181D172BDDFDC45A311 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77CEE58E4E13C3E1C7C5B12EAD2C377A /* libPods-TTGDeallocTaskHelper_Example.a */,
+				72FCE074F3D0E12740BE0C702DBA50B4 /* libPods-TTGDeallocTaskHelper_Tests.a */,
+				27ECA4842E45932592043F26CBE3F740 /* libTTGDeallocTaskHelper.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1DB1802249F5BD551C20BC7475BC1643 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D819A7E121981E12BEB832863B15BBA3 /* NSObject+TTGDeallocTaskHelper.h */,
+				74FFEE5E12E73E3A201672DDBC09B410 /* NSObject+TTGDeallocTaskHelper.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		448413D4E19D8D4EBD84262332AE0C48 /* Pods-TTGDeallocTaskHelper_Example */ = {
+			isa = PBXGroup;
+			children = (
+				55803EB38F4BD5B0B751BB0E7CA901B1 /* Pods-TTGDeallocTaskHelper_Example-acknowledgements.markdown */,
+				425DB10573A4745402397AFAA06DEB72 /* Pods-TTGDeallocTaskHelper_Example-acknowledgements.plist */,
+				58A2E3273886EC8CEAACED032E0EA1A1 /* Pods-TTGDeallocTaskHelper_Example-dummy.m */,
+				08BF87DF2EB2B6B176EE03E4AA969E2F /* Pods-TTGDeallocTaskHelper_Example-frameworks.sh */,
+				6EE5E58303ECBE33509C65A7FE625A5F /* Pods-TTGDeallocTaskHelper_Example-resources.sh */,
+				CDE12029D9EB6AF1DBE0C4ECB3DCC98F /* Pods-TTGDeallocTaskHelper_Example.debug.xcconfig */,
+				44D3613ADCCA1638CC790494EAECCA4A /* Pods-TTGDeallocTaskHelper_Example.release.xcconfig */,
+			);
+			name = "Pods-TTGDeallocTaskHelper_Example";
+			path = "Target Support Files/Pods-TTGDeallocTaskHelper_Example";
+			sourceTree = "<group>";
+		};
+		50D08B1B219C1521DC74774A4005A1EE /* TTGDeallocTaskHelper */ = {
+			isa = PBXGroup;
+			children = (
+				1DB1802249F5BD551C20BC7475BC1643 /* Classes */,
+			);
+			path = TTGDeallocTaskHelper;
+			sourceTree = "<group>";
+		};
+		5E44797EE9939AE6846A55A94410382F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA401DDB5FD021A3DBE57D9E8828747F /* TTGDeallocTaskHelper */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				5E44797EE9939AE6846A55A94410382F /* Development Pods */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				18241B33965EE181D172BDDFDC45A311 /* Products */,
+				10A3661F2759B39333E4D638B565041C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		825DD70C89A91C5F7BAD40248DFB55B2 /* Pods-TTGDeallocTaskHelper_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8499E0251852CDDF552B380481CDB347 /* Pods-TTGDeallocTaskHelper_Tests-acknowledgements.markdown */,
+				245BAFBF5F6BD4E4E4C30B84CEBE9583 /* Pods-TTGDeallocTaskHelper_Tests-acknowledgements.plist */,
+				3BC142C7BB710ED8184F764CF367EAAE /* Pods-TTGDeallocTaskHelper_Tests-dummy.m */,
+				F866F5609CCB43E106DA4C48C2DA5813 /* Pods-TTGDeallocTaskHelper_Tests-frameworks.sh */,
+				0919C3FBC86536081116E79B90E80A05 /* Pods-TTGDeallocTaskHelper_Tests-resources.sh */,
+				8B24BB4546A30C439032A595C62C01DE /* Pods-TTGDeallocTaskHelper_Tests.debug.xcconfig */,
+				CE51CC2232011AE9FC4E7EAAA9366B2C /* Pods-TTGDeallocTaskHelper_Tests.release.xcconfig */,
+			);
+			name = "Pods-TTGDeallocTaskHelper_Tests";
+			path = "Target Support Files/Pods-TTGDeallocTaskHelper_Tests";
+			sourceTree = "<group>";
+		};
+		D1E7B662015F43EBB0D0519AAC5A7C26 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				09380E532BB1971AAE638734E57574F9 /* CoreFoundation.framework */,
+				EBCA801DED542D9C48BB9496E41CB2A7 /* Foundation.framework */,
+				1ED1411C548899C28A948508769F77B7 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EA401DDB5FD021A3DBE57D9E8828747F /* TTGDeallocTaskHelper */ = {
+			isa = PBXGroup;
+			children = (
+				16F57D9DEAB193E7FF5FBB7D0A60D963 /* Support Files */,
+				50D08B1B219C1521DC74774A4005A1EE /* TTGDeallocTaskHelper */,
+			);
+			name = TTGDeallocTaskHelper;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7E8103DF2D11F0EF7AC384DE99664031 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				809ED1937597B26B65A4606A959D7A48 /* NSObject+TTGDeallocTaskHelper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2A9332C0549E2BDB2C0873496AD3D14D /* TTGDeallocTaskHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B21233ED387BF658E82CF5E9143F3611 /* Build configuration list for PBXNativeTarget "TTGDeallocTaskHelper" */;
+			buildPhases = (
+				3160D149909906AE67C24A980B12CF56 /* Sources */,
+				7C0FDE212FA9A9ED005547EEF46E5D54 /* Frameworks */,
+				7E8103DF2D11F0EF7AC384DE99664031 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TTGDeallocTaskHelper;
+			productName = TTGDeallocTaskHelper;
+			productReference = 27ECA4842E45932592043F26CBE3F740 /* libTTGDeallocTaskHelper.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		952B9FE7A6AAB219EED2C2932E9CD715 /* Pods-TTGDeallocTaskHelper_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D17BAA038D0DF3E55F4AE72B36CD9B97 /* Build configuration list for PBXNativeTarget "Pods-TTGDeallocTaskHelper_Tests" */;
+			buildPhases = (
+				46D75896C0A75AE8D684180C979D80FA /* Sources */,
+				A0C04616D606B416EF7F78EF6612F529 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TTGDeallocTaskHelper_Tests";
+			productName = "Pods-TTGDeallocTaskHelper_Tests";
+			productReference = 72FCE074F3D0E12740BE0C702DBA50B4 /* libPods-TTGDeallocTaskHelper_Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C44BCE0A39FE96FC3DB03B8304DEF533 /* Pods-TTGDeallocTaskHelper_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9C15424493FCB45E56A9E6DD0C2E6E8 /* Build configuration list for PBXNativeTarget "Pods-TTGDeallocTaskHelper_Example" */;
+			buildPhases = (
+				A1AC2B3491EE6CF00F2B4651E9F5DFA8 /* Sources */,
+				FE87E255C248C92D4F6D23EC464BF1A9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF1FC25F4BFF253A0C025715595DD787 /* PBXTargetDependency */,
+			);
+			name = "Pods-TTGDeallocTaskHelper_Example";
+			productName = "Pods-TTGDeallocTaskHelper_Example";
+			productReference = 77CEE58E4E13C3E1C7C5B12EAD2C377A /* libPods-TTGDeallocTaskHelper_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 18241B33965EE181D172BDDFDC45A311 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C44BCE0A39FE96FC3DB03B8304DEF533 /* Pods-TTGDeallocTaskHelper_Example */,
+				952B9FE7A6AAB219EED2C2932E9CD715 /* Pods-TTGDeallocTaskHelper_Tests */,
+				2A9332C0549E2BDB2C0873496AD3D14D /* TTGDeallocTaskHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3160D149909906AE67C24A980B12CF56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9470BA21C9BBA92F6A5ACB4CCBD3EB1F /* NSObject+TTGDeallocTaskHelper.m in Sources */,
+				F333BF4D2737A564D26FA1984E09CF24 /* TTGDeallocTaskHelper-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D75896C0A75AE8D684180C979D80FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				192BD53CB29287BC2400C49FB7A0AA04 /* Pods-TTGDeallocTaskHelper_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1AC2B3491EE6CF00F2B4651E9F5DFA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E5AAE1BA7D4DE506D8242E8846EAD5 /* Pods-TTGDeallocTaskHelper_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF1FC25F4BFF253A0C025715595DD787 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TTGDeallocTaskHelper;
+			target = 2A9332C0549E2BDB2C0873496AD3D14D /* TTGDeallocTaskHelper */;
+			targetProxy = 369B5920AFA62F5E7F0147EE5B2CF294 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0BA08F52AF5955529B52639CEB57DAAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		23B48291D7A277220A30EB3E5EBD3F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44D3613ADCCA1638CC790494EAECCA4A /* Pods-TTGDeallocTaskHelper_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		57C55EEDDFEC4D42F57519CD4331F5B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE6F017DD07EE45E5E59AD92071D4FA8 /* TTGDeallocTaskHelper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TTGDeallocTaskHelper/TTGDeallocTaskHelper-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5D644EE27F09F03D2844100CB1CCB3E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE6F017DD07EE45E5E59AD92071D4FA8 /* TTGDeallocTaskHelper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TTGDeallocTaskHelper/TTGDeallocTaskHelper-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		61D849FA7DBE7AA351D9A219E6E121E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE51CC2232011AE9FC4E7EAAA9366B2C /* Pods-TTGDeallocTaskHelper_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		7107B52D33DDFB0057D055247EAE7B41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91285B0D2F3BD575870DB7A47DEFF356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B24BB4546A30C439032A595C62C01DE /* Pods-TTGDeallocTaskHelper_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D469D73F57A5C50CD3DA7AF742650602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDE12029D9EB6AF1DBE0C4ECB3DCC98F /* Pods-TTGDeallocTaskHelper_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BA08F52AF5955529B52639CEB57DAAC /* Debug */,
+				7107B52D33DDFB0057D055247EAE7B41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9C15424493FCB45E56A9E6DD0C2E6E8 /* Build configuration list for PBXNativeTarget "Pods-TTGDeallocTaskHelper_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D469D73F57A5C50CD3DA7AF742650602 /* Debug */,
+				23B48291D7A277220A30EB3E5EBD3F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B21233ED387BF658E82CF5E9143F3611 /* Build configuration list for PBXNativeTarget "TTGDeallocTaskHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57C55EEDDFEC4D42F57519CD4331F5B0 /* Debug */,
+				5D644EE27F09F03D2844100CB1CCB3E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D17BAA038D0DF3E55F4AE72B36CD9B97 /* Build configuration list for PBXNativeTarget "Pods-TTGDeallocTaskHelper_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91285B0D2F3BD575870DB7A47DEFF356 /* Debug */,
+				61D849FA7DBE7AA351D9A219E6E121E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

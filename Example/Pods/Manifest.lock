@@ -1,0 +1,16 @@
+PODS:
+  - TTGDeallocTaskHelper (0.1.0)
+
+DEPENDENCIES:
+  - TTGDeallocTaskHelper (from `../`)
+
+EXTERNAL SOURCES:
+  TTGDeallocTaskHelper:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TTGDeallocTaskHelper: 7b112001d1cbcd6a4f13836e2c46372897f100ac
+
+PODFILE CHECKSUM: 2857757c127e665d312ca78089ba45149c1b4073
+
+COCOAPODS: 1.0.1
