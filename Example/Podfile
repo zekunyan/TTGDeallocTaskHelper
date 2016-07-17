@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TTGDeallocTaskHelper_Example' do
+  pod 'TTGDeallocTaskHelper', :path => '../'
+
+  target 'TTGDeallocTaskHelper_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
