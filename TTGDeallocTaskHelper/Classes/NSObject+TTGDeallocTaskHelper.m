@@ -37,13 +37,13 @@ const NSUInteger TTGDeallocTaskIllegalIdentifier = 0; // illegal identifier
 
 - (NSUInteger)addTask:(TTGDeallocTaskBlock)taskBlock {
     // Global increase identifier
-    static volatile NSUInteger globalIdentifier = 0;
+    static volatile int64_t globalIdentifier = 0;
     
     if (!taskBlock) {
         return TTGDeallocTaskIllegalIdentifier;
     }
     
-    NSUInteger newIdentifier = OSAtomicIncrement64((int64_t *)&globalIdentifier);
+    NSUInteger newIdentifier = (NSUInteger)OSAtomicIncrement64(&globalIdentifier);
     NSNumber *newIdentifierNumber = @(newIdentifier);
     
     if (newIdentifierNumber) {
