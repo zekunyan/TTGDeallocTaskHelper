@@ -11,7 +11,10 @@ TTGDeallocTaskHelper is useful to perform tasks after object dealloc.
 
 ## Requirements
 
-iOS 6 and later.
+* iOS 7
+* macOS 10.8
+* tvOS 9.0
+* watchOS 2.0
 
 ## Installation
 
