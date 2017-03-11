@@ -43,7 +43,7 @@ const NSUInteger TTGDeallocTaskIllegalIdentifier = 0; // illegal identifier
         return TTGDeallocTaskIllegalIdentifier;
     }
     
-    NSUInteger newIdentifier = OSAtomicIncrement64(&globalIdentifier);
+    NSUInteger newIdentifier = OSAtomicIncrement64((int64_t *)&globalIdentifier);
     NSNumber *newIdentifierNumber = @(newIdentifier);
     
     if (newIdentifierNumber) {
