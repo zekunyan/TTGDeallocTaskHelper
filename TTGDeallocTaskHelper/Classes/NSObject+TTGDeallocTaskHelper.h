@@ -20,7 +20,7 @@ typedef void (^TTGDeallocTaskBlock)(__unsafe_unretained id object, NSUInteger id
 /**
  *  illegal identifier.
  */
-extern NSUInteger TTGDeallocTaskIllegalIdentifier;
+extern const NSUInteger TTGDeallocTaskIllegalIdentifier;
 
 @interface NSObject (TTGDeallocTaskHelper)
 
