@@ -63,6 +63,47 @@
     XCTAssert(name == nil);
 }
 
+- (void)testRemoveAllTask {
+    NSMutableIndexSet *identifierSet = [NSMutableIndexSet new];
+    dispatch_group_t group = dispatch_group_create();
+    NSUInteger taskCount = 100;
+    
+    __block NSUInteger num = 0;
+    __block pthread_mutex_t lock;
+    pthread_mutex_init(&lock, NULL);
+
+    TestObject *testObject = [TestObject new];
+    
+    for (NSUInteger i = 0; i < taskCount; i++) {
+        dispatch_group_enter(group);
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+            
+            // Test multi thread add tasks
+            NSUInteger newIdentifier = [testObject ttg_addDeallocTask:^(__unsafe_unretained TestObject *object, NSUInteger identifier) {
+                pthread_mutex_lock(&lock);
+                num += 1;
+                pthread_mutex_unlock(&lock);
+            }];
+            
+            pthread_mutex_lock(&lock);
+            [identifierSet addIndex:newIdentifier];
+            pthread_mutex_unlock(&lock);
+           
+            dispatch_group_leave(group);
+        });
+    }
+    
+    dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
+    
+    // Remove all dealloc tasks
+    [testObject ttg_removeAllDeallocTasks];
+    testObject = nil;
+    
+    NSLog(@"num: %ld, identifiers: %ld, %@", num, identifierSet.count, identifierSet);
+    XCTAssert(num == 0);
+    XCTAssert(identifierSet.count == taskCount);
+}
+
 - (void)testMultiThreadDeallocTask {
     NSMutableIndexSet *identifierSet = [NSMutableIndexSet new];
     dispatch_group_t group = dispatch_group_create();
@@ -81,6 +122,7 @@
                 dispatch_group_enter(group);
                 dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
                     
+                    // Test multi thread add tasks
                     NSUInteger newIdentifier = [testObject ttg_addDeallocTask:^(__unsafe_unretained TestObject *object, NSUInteger identifier) {
                         pthread_mutex_lock(&lock);
                         num += 1;
@@ -91,6 +133,12 @@
                     pthread_mutex_lock(&lock);
                     [identifierSet addIndex:newIdentifier];
                     pthread_mutex_unlock(&lock);
+                    
+                    if (i == 0) {
+                        // Test multi thread remove tasks
+                        [testObject ttg_removeDeallocTaskByIdentifier:newIdentifier];
+                        dispatch_group_leave(group);
+                    }
                 });
             }
         }
@@ -99,7 +147,7 @@
     dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
     
     NSLog(@"num: %ld, identifiers: %ld", num, identifierSet.count);
-    XCTAssert(num == objectCount * taskCount);
+    XCTAssert(num == objectCount * taskCount - objectCount);
     XCTAssert(identifierSet.count == objectCount * taskCount);
 }
 
