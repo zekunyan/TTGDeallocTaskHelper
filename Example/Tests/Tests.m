@@ -66,8 +66,8 @@
 - (void)testMultiThreadDeallocTask {
     NSMutableIndexSet *identifierSet = [NSMutableIndexSet new];
     dispatch_group_t group = dispatch_group_create();
-    NSUInteger objectCount = 100;
-    NSUInteger taskCount = 100;
+    NSUInteger objectCount = 1000;
+    NSUInteger taskCount = 1000;
     
     __block NSUInteger num = 0;
     __block pthread_mutex_t lock;
@@ -82,7 +82,9 @@
                 dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
                     
                     NSUInteger newIdentifier = [testObject ttg_addDeallocTask:^(__unsafe_unretained TestObject *object, NSUInteger identifier) {
+                        pthread_mutex_lock(&lock);
                         num += 1;
+                        pthread_mutex_unlock(&lock);
                         dispatch_group_leave(group);
                     }];
                     
